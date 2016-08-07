@@ -94,3 +94,31 @@ function volume({l, w, h = 10}) {
   return l * w * h;
 }
 ```
+
+### Rest Parameters
+
+A way to collect multiple parameters into a single one by using `...` before the argument name
+ 
+```javascript
+printArgs(1, 2, 3)
+ 
+function printArgs(...args) {
+  args.forEach(function (arg) {
+    console.log(arg);
+  }
+}
+```
+ 
+### Spread Operator
+ 
+conceptually opposite of the rest parameters. Enables dynamic expansion of expressions
+ 
+```javascript
+let nums = [1, 2, 3];
+ 
+function add(x, y , z) {
+  return x + y + z;
+}
+
+add(...nums)
+```
