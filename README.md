@@ -70,3 +70,27 @@ var template = `
   </div>
 `
 ```
+
+### Destructuring
+
+A way to pluck properties from a data structure and assign them to variables
+
+```javascript
+var object = {
+  a: 1,
+  b: 2
+}
+
+var {a, b} = object;
+```
+
+```javascript
+var prism = {
+  l: 10,
+  w: 30
+}
+
+function volume({l, w, h = 10}) {
+  return l * w * h;
+}
+```
