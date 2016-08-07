@@ -54,3 +54,19 @@ var obj = {
   }
 }
 ```
+
+### Template Strings
+
+- multiline support
+- string interpolation
+- useful for creating html templates
+
+```javascript
+var name = "Bahul Jain"
+
+var template = `
+  <div>
+    ${ name }
+  </div>
+`
+```
