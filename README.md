@@ -122,3 +122,14 @@ function add(x, y , z) {
 
 add(...nums)
 ```
+
+### Enhanced Object Literal
+
+Dynamic property generation in object literals
+
+```javascript
+var obj = {
+  a: 1,
+  [ 'b_' + 2 ]: 2 
+}
+```
